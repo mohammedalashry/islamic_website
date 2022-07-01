@@ -15,7 +15,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){// The whole page process
 			try{
 
 $dbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");				
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 6119d71fabc547d843720464259be75b32c431db
 				}
 			catch(PDOException $e){
 				echo "failed"; echo $e -> getMessage();
@@ -36,7 +39,10 @@ $dbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazona
 			try{
 
 $dbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");				
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 6119d71fabc547d843720464259be75b32c431db
 				}
 			catch(PDOException $e){
 				echo "failed"; echo $e -> getMessage();
@@ -63,7 +69,10 @@ $dbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazona
 			try{
 
 $dbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");				
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 6119d71fabc547d843720464259be75b32c431db
 				}
 			catch(PDOException $e){
 				echo "failed"; echo $e -> getMessage();
