@@ -1,5 +1,4 @@
 <?php
-@session_start();
 
 ?>
 <html dir="rtl">
@@ -9,7 +8,7 @@
 
 	<title>تذكير </title>
 
-	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/mainstyle.css" defer>
 	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -53,43 +52,17 @@
 			<h1 style="text-align: center;">تذكير </h1>
 		</div>
 		<div class="membership">
-			<p style="font-weight: bold;display: inline-block;position: absolute;margin-top: 30px;">قائمة العضو  </p>
 			<i class="fa fa-user"></i>
-			<input type="checkbox" class="chbox2" name="">
 			<ul>
-						<li><a href="/islamic_website"> المفضلات</a></li>
-						<li><a href="/islamic_website"> المساهمات </a></li>
-						<li><a href="/islamic_website"> السجل </a></li>
-						<hr>
-						<li><a href="personaldata.php"> البيانات الشخصية  </a></li>
-						<li><a href="logout.php"> تسجيل الخروج  </a></li>
-
+					<li style="margin-bottom: 7px"><a href="login.php">تسجيل الدخول  </a></li>
+					<li><a href="register.php">تسجيل عضو جديد  </a></li>
 			</ul>
 		</div>
 </div>
 <div class="mainBody">
-	<div class="gridSystem">
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3><a href="articlespage.php">قرءان كريم  </a></h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-	</div>
+	<div class="full-quraan">
+
+    </div>
 </div>
 <div class="footer">
 	<div class="footer1">
@@ -124,5 +97,10 @@
 	</div>
 </div>
 </div>
+
+<!-- script javascript -->
+
+<script src="JS/quraanpage.js"></script>
+
 </body>
 </html>

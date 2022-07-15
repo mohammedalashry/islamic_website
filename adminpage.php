@@ -59,9 +59,9 @@
 			<i class="fa fa-user" style="display: inline-block;"> </i>
 			<input type="checkbox" class="chbox2" name="">
 			<ul>
-						<li><a href="/"> المفضلات</a></li>
-						<li><a href="/"> المساهمات </a></li>
-						<li><a href="/"> السجل </a></li>
+						<li><a href="/islamic_website"> المفضلات</a></li>
+						<li><a href="/islamic_website"> المساهمات </a></li>
+						<li><a href="/islamic_website"> السجل </a></li>
 						<li><a href="newarticle.php"> نشر مقالة  جديدة  </a></li>
 						<hr>
 						<li><a href="personaldata.php"> البيانات الشخصية  </a></li>

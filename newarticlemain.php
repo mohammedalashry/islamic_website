@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 	$formcategory= $_POST['category'];
 	$formimage = $_POST['image'];
 	try{
-$dtbase = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");
+	$dtbase= new PDO("mysql:host=localhost;dbname=islamic_website",'root','');
 	}
 	catch(PDOException $e){
 	echo "failed";echo $e -> getMessage();
@@ -126,9 +126,9 @@ form label+input[type='file']::before {
 			<i class="fa fa-user" style="display: inline-block;"> </i>
 			<input type="checkbox" class="chbox2" name="">
 			<ul>
-						<li><a href="/"> المفضلات</a></li>
-						<li><a href="/"> المساهمات </a></li>
-						<li><a href="/"> السجل </a></li>
+						<li><a href="/islamic_website"> المفضلات</a></li>
+						<li><a href="/islamic_website"> المساهمات </a></li>
+						<li><a href="/islamic_website"> السجل </a></li>
 						<li><a href="newarticle.php"> نشر مقالة  جديدة  </a></li>
 						<hr>
 						<li><a href="/islamic_website"> البيانات الشخصية  </a></li>

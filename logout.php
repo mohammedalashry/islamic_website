@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['userlogin']) ){
 	session_unset();
 	session_destroy();
-	header("location:/");
+	header("location:/islamic_website");
 }
 else{
 	header("location:error");
