@@ -11,7 +11,7 @@ setcookie('registerDataEmail',$_POST['emailAddress'],time()+600);
 class User {
  public function add_user ($fn , $ln, $em, $pa){
 try {
- 	$db = new PDO("mysql:host=localhost;dbname=islamic_website","root");
+ 	$db = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");
  	$db->exec("INSERT INTO users (firstname,lastname,email,password,type_of_access) VALUES ( '$fn' , '$ln', '$em' , '$pa','user' )");
 }
 catch(PDOException $e){
@@ -49,8 +49,7 @@ public $error=array(
 		if  ((preg_match("/gmail.com$/i", $em) ==0) && (preg_match("/hotmail.com$/i", $em) ==0) && (preg_match("/outlock.com$/i", $em) ==0) && (preg_match("/yahoo.com$/i", $em) ==0)): $this-> error['emailerror'] = "not a valid email"; endif;
 		try {
 
- 			$db = new PDO("mysql:host=localhost;dbname=islamic_website","root");
-
+ 			$db = new PDO("mysql:host=n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tt1bqatv5vie1w94","ip2wg0u4ijy736k4","j8uaormv2lstoxjl");
 		}
 		catch(PDOException $e){
 
