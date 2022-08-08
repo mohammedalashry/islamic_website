@@ -1,1 +1,0 @@
-<br> <hr>ssssssssss<br><hr>articles/21.php<br><hr>quraan<br><hr>

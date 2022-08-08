@@ -1,1 +1,0 @@
-ohg]<br> <hr>محمد اشرف<br><hr>articles/7.php<br><hr>quraan<br><hr>

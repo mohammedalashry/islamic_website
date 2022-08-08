@@ -1,1 +1,0 @@
-<br> <hr><br><hr>articles/13.php<br><hr>quraan<br><hr>

@@ -1,5 +1,4 @@
 <?php
-
 ?>
 <html dir="rtl">
 <head>
@@ -10,111 +9,70 @@
 
 	<link rel="stylesheet" href="css/mainstyle.css">
 	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+   
+
 
 </head>
 <body>
 <div class="heart">	
-<div class="menu">
-		<ul>
-			<li><a href="">اتصل بنا  </a></li>
-			<li><a href="">اتصل بنا  </a></li>
-			<li><a href="">اتصل بنا  </a></li>
 
-		</ul>
-
-		<div class="mainMenu">
-
-			<div class="menubar">
-				<span></span>
-				<span></span>
-				<span></span>
-
-			</div>
-			<input type="checkbox" class="chbox" name="">
-			
-			<ul class="verticalmenu">
-					<li><a href="">quraan </a></li>
-					<li><a href="">quraan </a></li>
-					<li><a href="">quraan </a></li>
-					<li><a href="">quraan </a></li>
-					<li><a href="">quraan </a></li>
-					<li><a href="">quraan </a></li>
-
-			</ul>
-			
-		</div>
-</div>
 <div class="header">
-	
-		
-		<div class="logo">
-			<img src="img/ss.jpg">
-			<h1 style="text-align: center;">تذكير </h1>
-		</div>
-		<div class="membership">
-			<i class="fa fa-user"></i>
-			<ul>
-					<li style="margin-bottom: 7px"><a href="login.php">تسجيل الدخول  </a></li>
-					<li><a href="register.php">تسجيل عضو جديد  </a></li>
-			</ul>
-		</div>
+    <div class="menu">
+        <h1><a href="" style="color:#f5d32d;">تذكير</a> </h1>
+        <ul class="desktopmenu">
+            <li><a href="quraanmainpage.php">قرأن كريم</a></li>
+            <li><a href="#">تفسير</a></li>
+            <li><a href="#">حديث</a></li>
+            <li><a href="login.php">تسجيل دخول</a></li>
+            <li><a href="register.php">عضو جديد</a></li>
+        </ul>
+        <div class="mobilemenu">
+            <i class="menu-icon fa fa-bars" onclick="modaelgen()"></i>
+            <ul>
+                <li menuelement><a href="quraanmainpage.php">قرأن كريم</a></li>
+                <li menuelement><a href="#">تفسير</a></li>
+                <li menuelement><a href="#">حديث</a></li>
+                <li menuelement><a href="login.php">تسجيل دخول</a></li>
+                <li menuelement><a href="register.php">عضو جديد</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <img src="img/mainimg.jpg">
+    <div></div>
+    <p>بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</p>
+    <h2>إِنَّا عَرَضْنَا الأَمَانَةَ عَلَى السَّمَوَاتِ وَالأَرْضِ وَالْجِبَالِ</h2>
+
 </div>
 <div class="mainBody">
-	<div class="gridSystem">
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3><a href="articlespage.php">قرءان كريم  </a></h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-		<div>
-			<div><img src="img/ss.jpg"></div>
-			<h3> قرءان كريم  </h3>
-			<p> استمع واقرء القرءان الكريم كاملا لعدد كبير من الشيوخ المختلفين  </p>
-		</div>
-	</div>
+    <div class="divinsidebody">
+        <div><img src="img/quraan.jpg"></div>
+        <h3><a href="quraanmainpage.php">قرأن كريم</a></h3>
+    </div>
+    <div class="divinsidebody">
+        <div><img src="img/hadeeth.jpeg"></div>
+        <h3><a href="#"> حديث </a></h3>
+    </div>
+    <div class="divinsidebody">
+        <div><img src="img/tafseer.jpg"></div>
+        <h3><a href="#">تفسير </a></h3>
+    </div>
+    <div class="divinsidebody">
+        <div style=""><img src="img/articles.jpg"></div>
+        <h3 style="font-size:1.5vw;"><a href="articlespage.php"> مقالات اسلامية <br> متنوعة</a></h3>
+    </div>
 </div>
 <div class="footer">
-	<div class="footer1">
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-	</div>
-	<div class="footer2">
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-	</div>
-	<div class="footer3">
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-		<div>
-			<h3>محمد العشري الجن نمبر وان</h3>
-			<p>ازيك ازسك ازيك لاسز صصصصص صص  صص ص ص صص ضصضثضصثشؤسؤصثمطكوكطضصث   </p>
-		</div>
-	</div>
+	<ul>
+    <li><a href="contactus.html">اتصل بنا</a></li>
+    <li><a href="contributewithus.html">ساهم معنا</a></li>
+    <li><a href="privacypolicy.html">سياسة الخصوصية</a></li>    
+    </ul>
+    <p>تمت البرمجة بواسطة <a href="https://www.facebook.com/Mohammed.Alashry99">محمد العشري</a></p>
 </div>
 </div>
+<script src="JS/main.js">
+</script>
 </body>
 </html>
