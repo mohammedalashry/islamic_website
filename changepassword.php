@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once "trial-mark.html";
+
 if ((@$_SERVER['HTTP_REFERER']!='http://localhost/islamic_website/personaldata.php') && (@$_SERVER['HTTP_REFERER']!='http://localhost/islamic_website/changepassword.php')){
 	exit('you can`t access this page');
 

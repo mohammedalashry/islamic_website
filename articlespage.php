@@ -1,6 +1,8 @@
 <?php
 
 @session_start();
+require_once "trial-mark.html";
+
 try{
 	$dtbase= new PDO("mysql:host=localhost;dbname=islamic_website","root","");
 }

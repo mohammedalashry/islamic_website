@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+require_once "trial-mark.html";
+
 if (isset($_SESSION['emailErrorDiv']) == FALSE && isset($_SESSION['passErrorDiv'])==FALSE && isset($_SESSION['fnErrorDiv'])==FALSE && isset($_SESSION['lnErrorDiv'])==FALSE )
 {
 $_SESSION['emailFoundDiv']='none';
