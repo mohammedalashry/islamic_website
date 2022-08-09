@@ -101,6 +101,7 @@ document.querySelector(".moda").addEventListener("click",concatAudio);
 
 function playNext(lastAyah,i){
     let lestinSpecificAyahDiv= document.querySelector(".listen-specific-ayah");
+    lestinSpecificAyahDiv.style.flexWrap="wrap";
 
     i++;
     if(i<=lastAyah){
