@@ -99,9 +99,10 @@ document.querySelector(".moda").addEventListener("click",concatAudio);
 */
 
 function playNext(lastAyah,i){
-    i++;
     let lestinSpecificAyahDiv= document.querySelector(".listen-specific-ayah");
     lestinSpecificAyahDiv.style.flexWrap="wrap";
+    arrayofayah[i].style.display="none";
+    i++;
     if(i<=lastAyah){
         arrayofayah[i]=new Audio(`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
         lestinSpecificAyahDiv.appendChild(arrayofayah[i]);
