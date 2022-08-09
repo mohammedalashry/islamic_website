@@ -108,7 +108,8 @@ function playNext(lastAyah,i){
         lestinSpecificAyahDiv.appendChild(arrayofayah[i]);
         arrayofayah[i].setAttributeNode(document.createAttribute("controls"));
         console.log(arrayofayah[i]);
-        arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
+        //arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
+        arrayofayah[i].setAttribute("oncanplaythrough","this.play()");
         currentTime(arrayofayah,i,lastAyah);
     }
     
