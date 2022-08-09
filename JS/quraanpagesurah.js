@@ -100,6 +100,10 @@ document.querySelector(".moda").addEventListener("click",concatAudio);
 
 function playNext(lastAyah,i){
     let lestinSpecificAyahDiv= document.querySelector(".listen-specific-ayah");
+    let iFrame=document.createElement("iframe");
+    iFrame.setAttribute("allow","autoplay");
+    iFrame.style.display="none";
+    lestinSpecificAyahDiv.appendChild(iFrame);
     lestinSpecificAyahDiv.style.flexWrap="wrap";
     arrayofayah[i].style.display="none";
     i++;
@@ -108,8 +112,9 @@ function playNext(lastAyah,i){
         lestinSpecificAyahDiv.appendChild(arrayofayah[i]);
         arrayofayah[i].setAttributeNode(document.createAttribute("controls"));
         console.log(arrayofayah[i]);
-        //arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
-        arrayofayah[i].setAttribute("oncanplaythrough","this.play()");
+        iFrame.setAttribute("src",`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
+        arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
+        arrayofayah[i].volume=0;
         currentTime(arrayofayah,i,lastAyah);
     }
     
@@ -122,7 +127,6 @@ function currentTime(arrayofayah,i,lastAyah){
     selectElement22.addEventListener("change",()=>{
         arrayofayah[i].pause();
         clearTimeout(timeOut);
-        console.log("timeout clear");
     })
     if (arrayofayah[i].ended==true){
         
@@ -130,7 +134,6 @@ function currentTime(arrayofayah,i,lastAyah){
     }else{
         var timeOut=setTimeout(() => {
             currentTime(arrayofayah,i,lastAyah);
-            console.log("again");
         }, 300); 
     }
 
