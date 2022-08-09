@@ -114,6 +114,7 @@ function currentTime(arrayofayah,i,lastAyah){
     let iconListen= document.querySelector(".settings .listen-specific-ayah i");    
     let selectElement22=document.querySelector(".listen-specific-ayah select:nth-of-type(2)");
     selectElement22.addEventListener("change",()=>{
+        iconListen.setAttribute("class","fa fa-play");
         arrayofayah[i].pause();
         clearTimeout(timeOut);
     })
@@ -123,7 +124,7 @@ function currentTime(arrayofayah,i,lastAyah){
     }else{
         var timeOut=setTimeout(() => {
             currentTime(arrayofayah,i,lastAyah);
-        }, 500); 
+        }, 700); 
     }
 
     setTimeout(()=>{
@@ -339,7 +340,7 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}`).then(function (result
                                 errorForListenSpecificAyah=0;
                                 
                             }
-                        },1000)
+                        },3000)
                     }
                     setTimeout(()=>{
                         if (errorForListenSpecificAyah==0){
