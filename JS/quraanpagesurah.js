@@ -100,9 +100,14 @@ document.querySelector(".moda").addEventListener("click",concatAudio);
 
 function playNext(lastAyah,i){
     i++;
+    let lestinSpecificAyahDiv= document.querySelector(".listen-specific-ayah");
+    lestinSpecificAyahDiv.style.flexWrap="wrap";
     if(i<=lastAyah){
         arrayofayah[i]=new Audio(`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
-        arrayofayah[i].play();
+        lestinSpecificAyahDiv.appendChild(arrayofayah[i]);
+        arrayofayah[i].setAttributeNode(document.createAttribute("controls"));
+        console.log(arrayofayah[i]);
+        arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
         currentTime(arrayofayah,i,lastAyah);
     }
     
