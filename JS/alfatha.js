@@ -116,7 +116,6 @@ function currentTime(arrayofayah,i,lastAyah){
     selectElement22.addEventListener("change",()=>{
         arrayofayah[i].pause();
         clearTimeout(timeOut);
-        console.log("timeout clear");
     })
     if (arrayofayah[i].ended==true){
         
@@ -124,7 +123,6 @@ function currentTime(arrayofayah,i,lastAyah){
     }else{
         var timeOut=setTimeout(() => {
             currentTime(arrayofayah,i,lastAyah);
-            console.log("again");
         }, 500); 
     }
 
