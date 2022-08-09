@@ -110,7 +110,7 @@ function playNext(lastAyah,i){
         lestinSpecificAyahDiv.appendChild(arrayofayah[i]);
         arrayofayah[i].setAttributeNode(document.createAttribute("controls"));
         console.log(arrayofayah[i]);
-        arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
+        arrayofayah[i].play();
         
         currentTime(arrayofayah,i,lastAyah);
     }

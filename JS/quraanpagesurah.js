@@ -102,10 +102,11 @@ function playNext(lastAyah,i){
     let lestinSpecificAyahDiv= document.querySelector(".listen-specific-ayah");
     let iFrame=document.createElement("iframe");
     iFrame.setAttribute("allow","autoplay");
-    iFrame.style.display="none";
     lestinSpecificAyahDiv.appendChild(iFrame);
     lestinSpecificAyahDiv.style.flexWrap="wrap";
     arrayofayah[i].style.display="none";
+    let iFramedoc=iFrame.contentDocument;
+
     i++;
     if(i<=lastAyah){
         arrayofayah[i]=new Audio(`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
@@ -113,8 +114,9 @@ function playNext(lastAyah,i){
         arrayofayah[i].setAttributeNode(document.createAttribute("controls"));
         console.log(arrayofayah[i]);
         iFrame.setAttribute("src",`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
+        iFramedoc.body.appendChild(arrayofayah[i]);
+
         arrayofayah[i].setAttributeNode(document.createAttribute("autoplay"));
-        arrayofayah[i].volume=0;
         currentTime(arrayofayah,i,lastAyah);
     }
     
