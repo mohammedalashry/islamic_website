@@ -106,7 +106,7 @@ function playNext(lastAyah,i){
         arrayofayah[i]=new Audio(`https://cdn.islamic.network/quran/audio/128/ar.alafasy/${i}.mp3`);
         setTimeout(()=>{
             arrayofayah[i].play();
-        },1000)
+        },100)
         currentTime(arrayofayah,i,lastAyah);
     }
     
