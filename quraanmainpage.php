@@ -7,7 +7,7 @@ require_once "trial-mark.html";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>تذكير </title>
+	<title>تذكير | قرأن كريم</title>
 
 	<link rel="stylesheet" href="css/mainstyle.css">
 	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

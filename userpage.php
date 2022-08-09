@@ -65,7 +65,7 @@
 <div class="mainbody">
     <div class="divinsidebody">
         <div><img src="img/quraan.jpg"></div>
-        <h3><a href="quraanmainpage.html">قرأن كريم</a></h3>
+        <h3><a href="quraanmainpage.php">قرأن كريم</a></h3>
     </div>
     <div class="divinsidebody">
         <div><img src="img/hadeeth.jpeg"></div>
@@ -77,7 +77,7 @@
     </div>
     <div class="divinsidebody">
         <div style=""><img src="img/articles.jpg"></div>
-        <h3 style="font-size:1.5vw;"><a href="articlespage"> مقالات اسلامية <br> متنوعة</a></h3>
+        <h3 style="font-size:1.5vw;"><a href="articlespage.php"> مقالات اسلامية <br> متنوعة</a></h3>
     </div>
 </div>
 <div class="footer">

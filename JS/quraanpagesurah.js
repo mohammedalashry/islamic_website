@@ -288,6 +288,9 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}`).then(function (result
                         justify-content: center;
                         align-items: center;
                     `);
+                    let buttonToStart=document.createElement("button");
+                    buttonToStart.appendChild(document.createTextNode("تشغيل"));
+                    lestinSpecificAyahDiv.appendChild(buttonToStart);
                     lestinSpecificAyahDiv.appendChild(specificAudioElement);
                     let iconListen=document.createElement("i");
                     iconListen.setAttribute("class","fa fa-pause");
@@ -318,7 +321,7 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}`).then(function (result
                 }
             })
 
-        selectElement2.addEventListener("change",function(){
+        buttonToStart.addEventListener("click",function(){
            
             error2TextElement.style.display="none"
             errorP.style.display="none";
