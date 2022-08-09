@@ -48,19 +48,19 @@ require_once "trial-mark.html";
 </div>
 <div class="mainBody">
     <div class="divinsidebody">
-        <div><img src="img/quraan.jpg"><a href="quraanmainpage.php"></a></img></div>
+        <div><a href="quraanmainpage.php"><img src="img/quraan.jpg"></a></div>
         <h3><a href="quraanmainpage.php">قرأن كريم</a></h3>
     </div>
     <div class="divinsidebody">
-        <div><img src="img/hadeeth.jpeg"><a href="#"></a></img></div>
+        <div><a href="#"><img src="img/hadeeth.jpeg"></a></div>
         <h3><a href="#"> حديث </a></h3>
     </div>
     <div class="divinsidebody">
-        <div><img src="img/tafseer.jpg"><a href="#"></a></img></div>
+        <div><a href="#"><img src="img/tafseer.jpg"></a></div>
         <h3><a href="#">تفسير </a></h3>
     </div>
     <div class="divinsidebody">
-        <div style=""><img src="img/articles.jpg"><a href="articlespage.php"></a></img></div>
+        <div style=""><a href="articlespage.php"><img src="img/articles.jpg"></a></div>
         <h3 style="font-size:1.5vw;"><a href="articlespage.php"> مقالات اسلامية <br> متنوعة</a></h3>
     </div>
 </div>

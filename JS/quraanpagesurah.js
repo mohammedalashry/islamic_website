@@ -453,12 +453,7 @@ settingsDiv.appendChild(errorFull);
 setTimeout(() => {
     if(listenFullSurah.readyState!=4){
         let error="";
-        if(listenFullSurah.readyState==0){
-            error=" هناك مشكلة في الاتصال بقاعدة البيانات لاستماع السورة بالكامل حاول مرة اخري بعد قليل";
-        }else if(listenFullSurah.readyState==1){
-            error=" هناك مشكلة في الاتصال بقاعدة البيانات لاستماع السورة بالكامل حاول مرة اخري بعد قليل";
-
-        }else if(listenFullSurah.readyState==2){
+        if(listenFullSurah.readyState==2){
             error="الاتصال بالانترنت ضعيف ربما تواجه مشكلة ف جزء استماع السورة بالكامل";
 
         }else if(listenFullSurah.readyState==3){

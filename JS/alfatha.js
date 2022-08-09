@@ -222,6 +222,10 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}`).then(function (result
                 align-items: center;
  
                  `);
+                 myMediaQuery(mediaQuery);
+                 myMediaQuery2(mediaQuery2);
+                 myMediaQuery3(mediaQuery3);
+                 myMediaQuery4(mediaQuery4);
                  bsmallahElement.setAttribute("style","	font-family: 'Gulzar', serif;margin-top:30px;")
                  surahPageElementP.setAttribute("style","margin-block: 0;")
                  return result;
@@ -450,12 +454,8 @@ settingsDiv.appendChild(errorFull);
 setTimeout(() => {
     if(listenFullSurah.readyState!=4){
         let error="";
-        if(listenFullSurah.readyState==0){
-            error=" هناك مشكلة في الاتصال بقاعدة البيانات لاستماع السورة بالكامل حاول مرة اخري بعد قليل";
-        }else if(listenFullSurah.readyState==1){
-            error=" هناك مشكلة في الاتصال بقاعدة البيانات لاستماع السورة بالكامل حاول مرة اخري بعد قليل";
 
-        }else if(listenFullSurah.readyState==2){
+        if(listenFullSurah.readyState==2){
             error="الاتصال بالانترنت ضعيف ربما تواجه مشكلة ف جزء استماع السورة بالكامل";
 
         }else if(listenFullSurah.readyState==3){
@@ -471,6 +471,43 @@ setTimeout(() => {
 
 
 
+var mediaQuery=window.matchMedia("(max-width:1000px)");
+var mediaQuery2=window.matchMedia("(max-width:700px)");
+var mediaQuery3=window.matchMedia("(max-width:500px)");
+var mediaQuery4=window.matchMedia("(max-width:350px)");
+
+function myMediaQuery (mediaQuery){
+    let surahBody=document.querySelector(".surah-content");
+   if (mediaQuery.matches){
+       surahBody.style.lineHeight="4vh";
+       surahBody.style.fontSize="2vw";
+
+   }
+}
+function myMediaQuery2 (mediaQuery2){
+    let surahBody=document.querySelector(".surah-content");
+   if (mediaQuery2.matches){
+       surahBody.style.lineHeight="5vh";
+       surahBody.style.fontSize="3vw";
+
+   }
+}
+function myMediaQuery3 (mediaQuery3){
+    let surahBody=document.querySelector(".surah-content");
+   if (mediaQuery3.matches){
+       surahBody.style.lineHeight="4vh";
+       surahBody.style.fontSize="3.5vw";
+
+   }
+}
+function myMediaQuery4 (mediaQuery4){
+    let surahBody=document.querySelector(".surah-content");
+   if (mediaQuery4.matches){
+       surahBody.style.lineHeight="4vh";
+       surahBody.style.fontSize="4.5vw";
+
+   }
+}
 
 
 
