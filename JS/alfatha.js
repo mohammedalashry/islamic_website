@@ -124,7 +124,7 @@ function currentTime(arrayofayah,i,lastAyah){
     }else{
         var timeOut=setTimeout(() => {
             currentTime(arrayofayah,i,lastAyah);
-        }, 700); 
+        }, 2000); 
     }
 
     setTimeout(()=>{
