@@ -125,7 +125,7 @@ function currentTime(arrayofayah,i,lastAyah){
         var timeOut=setTimeout(() => {
             currentTime(arrayofayah,i,lastAyah);
             console.log("again");
-        }, 300); 
+        }, 500); 
     }
 
     setTimeout(()=>{
@@ -144,7 +144,7 @@ function currentTime(arrayofayah,i,lastAyah){
         if (arrayofayah[i].ended==true && i==lastAyah){
             iconListen.setAttribute("class","fa fa-play");
         }
-    },200) 
+    },300) 
 
 }
 
