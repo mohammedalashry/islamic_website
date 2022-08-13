@@ -337,7 +337,20 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}`).then(function (result
                 let startVerse=startAyahNumber+ayahvalue1;
                 let lastVerse=startAyahNumber+ayahvalue2;
 
-                if (ayahvalue2>=ayahvalue1){
+                if (ayahvalue2>ayahvalue1){
+                    fetch('/senddata.html', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            startVerse,
+                            lastVerse,
+                        }),
+                    }).then((res) => {
+                        return res.json();
+                    })
+                    .then((data) => console.log(data));
                     //check for each ayah is ready
                     let errorForListenSpecificAyah=1;
                     for (let j=startVerse;j<=lastVerse;j++){
